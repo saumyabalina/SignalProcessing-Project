@@ -22,5 +22,5 @@ y = echoCancellation(x, d, N, f_order, beta,fs_x);
 
 % % OPTIONAL
 % % Step 4: Save the output audio
-outputAudioFile = "q2_hard_ans.wav";
-saveOutputAudio(outputAudioFile,y,fs_x);
+% outputAudioFile = "q2_hard_ans.wav";
+% saveOutputAudio(outputAudioFile,y,fs_x);
