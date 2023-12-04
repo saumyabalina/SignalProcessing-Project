@@ -1,6 +1,6 @@
 %% Main script
 
-inputAudioFile = 'city-traffic-outdoor-6414.mp3';
+inputAudioFile = 'music_city-traffic.wav';
 
 % Step 1: Load input audio file
 [x, fs] = loadAudioFile(inputAudioFile);
