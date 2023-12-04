@@ -58,7 +58,6 @@ function noiseType = classifyNoise(audio)
     end
     
     % Define a time axis which has same length as correlation result
-    % Assuming length of audio signal is greater than 10 seconds
     max_time = max(length(audio),length(extractedSignal4));
     disp(max_time);
     time_axis = -(max_time-1):max_time-1;
