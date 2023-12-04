@@ -1,4 +1,4 @@
-% Main script
+%% Main script
 
 inputAudioFile = 'city-traffic-outdoor-6414.mp3';
 

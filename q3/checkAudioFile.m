@@ -1,5 +1,4 @@
-%% Function 2: Check if signal is mono or stereo and 
-% change required sound accordingly
+%% Function 2: Check if signal is mono or stereo and change accordingly
 
 function y = checkAudioFile(Y)
     if(width(Y)==2)

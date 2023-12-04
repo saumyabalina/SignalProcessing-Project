@@ -1,10 +1,9 @@
-%% Function 2: Noise classification
+%% Function 3: Noise classification
 
 function noiseType = classifyNoise(audio)
-
-    % Extract the part of signal from each audio file where maximum noise
-    % is present
-    % In given audio files, it is in the time interval (30, 40)
+    % Extract part of signal from each audio file where maximum noise
+    % is present to use as base signals for comparison
+    % In given audio files, this is in the time interval (30, 40)
     startTime = 30;
     endTime = 40;
     
@@ -35,11 +34,9 @@ function noiseType = classifyNoise(audio)
 
     corr_result2 = xcorr(extractedSignal2, audio);
     [max_corr2, max_index2] = max(corr_result2);
-    
 
     corr_result3 = xcorr(extractedSignal3, audio);
     [max_corr3, max_index3] = max(corr_result3);
-    
 
     corr_result4 = xcorr(extractedSignal4, audio);
     [max_corr4, max_index4] = max(corr_result4);
