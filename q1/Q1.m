@@ -1,19 +1,19 @@
-% Main script
+%% Main script
 
 inputAudioFile = 'q1.wav';
 
 % Step 1: Load input audio file
-[Y, Fs] = loadAudioFile(inputAudioFile);
+[y, Fs] = loadAudioFile(inputAudioFile);
 
 % Step 2: Check if input audio file is stereo or mono
 % and get audio file y from it
-y = checkAudioFile(Y);
+y = checkAudioFile(y);
 
 % Echo parameters
-alpha = 0.25; D = 2*Fs;
+alpha = 0.25; D = Fs;
 
 % Step 3: Create echo and play original and echo audio
-x = echoCreation(y, alpha, D);
+x = echoCreation(y, alpha, D, Fs);
 
 % % OPTIONAL
 % % Step 4: Save the output audio

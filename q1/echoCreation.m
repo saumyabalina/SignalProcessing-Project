@@ -1,6 +1,6 @@
 %% Function 3: Echo creation using given parameters 
 
-function x = echoCreation(y, attenuation, delay)
+function x = echoCreation(y, attenuation, delay, Fs)
     % b = [1,zeros(1,D-1),alpha,zeros(1,D-1),alpha^2,zeros(1,D-1),alpha^3,zeros(1,D-1),alpha^4];
     % a = 1;
     b = [1,zeros(1,delay-1),attenuation];
