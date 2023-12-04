@@ -1,7 +1,7 @@
 %% Main script
 
-inputAudioFile = 'q1_ans.wav';
-desiredAudioFile = 'q1.wav';
+inputAudioFile = 'q1_hard_ans.wav';
+desiredAudioFile = 'q1_hard.wav';
 
 % Step 1: Load input audio file and desired audio file
 [x, fs_x] = loadAudioFile(inputAudioFile);
@@ -18,7 +18,7 @@ f_order = 15;
 beta = 0.25;
 
 % Step 3: Cancel echo and play audio with and without echo
-y = echoCancellation(x, d, N, f_order, beta);
+y = echoCancellation(x, d, N, f_order, beta, fs_x);
 
 % % OPTIONAL
 % % Step 4: Save the output audio
