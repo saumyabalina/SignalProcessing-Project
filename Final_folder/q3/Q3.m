@@ -1,6 +1,6 @@
 %% Main script
 
-inputAudioFile = 'music_water-pump_hp.wav';
+inputAudioFile = 'music_city-traffic_hp.wav';
 
 % Step 1: Load input audio file
 [x, fs] = loadAudioFile(inputAudioFile);
@@ -10,7 +10,7 @@ inputAudioFile = 'music_water-pump_hp.wav';
 x = checkAudioFile(x);
 
 % Step 3: Classify the noise
-noiseType = classifyNoise(x);
+classifyNoise_2(x);
 
-fprintf('\n');
-disp(['The detected noise type is: ', noiseType]);
+% fprintf('\n');
+% disp(['The detected noise type is: ', noiseType]);
