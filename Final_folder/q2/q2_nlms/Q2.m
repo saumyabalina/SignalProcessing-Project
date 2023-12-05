@@ -14,8 +14,8 @@ d = checkAudioFile(d);
 
 % Filter parameters
 N = numel(x);
-f_order = 15;
-beta = 0.25;
+f_order = 25;
+beta = 0.01;
 
 % Step 3: Cancel echo and play audio with and without echo
 y = echoCancellation(x, d, N, f_order, beta,fs_x);
