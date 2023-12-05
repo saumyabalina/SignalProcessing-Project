@@ -1,6 +1,6 @@
 %% Main script
 
-inputAudioFile = 'q2_easy.wav';
+inputAudioFile = 'med_echo.wav';
 
 % Step 1: Load input audio file audio file
 [x, Fs] = loadAudioFile(inputAudioFile);
