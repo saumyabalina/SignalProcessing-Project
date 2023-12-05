@@ -59,7 +59,6 @@ function noiseType = classifyNoise(audio)
     
     % Define a time axis which has same length as correlation result
     max_time = max(length(audio),length(extractedSignal4));
-    disp(max_time);
     time_axis = -(max_time-1):max_time-1;
     
     % OPTIONAL: Display the maximum value of cross-correlation and the
