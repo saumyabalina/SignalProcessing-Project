@@ -5,7 +5,7 @@ function y = echoCancellation(echoSignal, desiredSignal, N, filterOrder, beta, F
     y = AdaptiveFilter_NLMS(echoSignal, desiredSignal, N, filterOrder, beta);
 
     for i = 1:100
-        y = AdaptiveFilter_NLMS(y, desiredSignal, N, filterOrder, beta, fs);
+        y = AdaptiveFilter_NLMS(y, desiredSignal, N, filterOrder, beta);
     end
     
     disp("Original Signal");

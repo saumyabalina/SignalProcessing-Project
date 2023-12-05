@@ -1,6 +1,6 @@
 %% Main script
 
-inputAudioFile = '';
+inputAudioFile = 'music_water-pump_hp.wav';
 
 % Step 1: Load input audio file
 [x, fs] = loadAudioFile(inputAudioFile);
