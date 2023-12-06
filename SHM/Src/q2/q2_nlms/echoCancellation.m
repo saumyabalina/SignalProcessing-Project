@@ -3,10 +3,6 @@
 function y = echoCancellation(echoSignal, desiredSignal, N, filterOrder, beta, Fs)
     % Use adaptive filter (NLMS algorithm) for echo cancellation
     y = AdaptiveFilter_NLMS(echoSignal, desiredSignal, N, filterOrder, beta);
-
-    for i = 1:100
-        y = AdaptiveFilter_NLMS(y, desiredSignal, N, filterOrder, beta, fs);
-    end
     
     disp("Original Signal");
     sound(echoSignal,Fs); pause(length(echoSignal)/Fs);

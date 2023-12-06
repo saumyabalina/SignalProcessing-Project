@@ -15,4 +15,4 @@ y = echoCancellation(x, Fs);
 % % OPTIONAL
 % % Step 4: Save the output audio
 % outputAudioFile = "q2_ans.wav";
-% saveOutputAudio(outputAudioFile,y,Fs);
+% saveOutputAudio(outputAudioFile, y, Fs);

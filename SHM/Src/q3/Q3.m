@@ -1,6 +1,6 @@
 %% Main script
 
-inputAudioFile = 'music_city-traffic.wav';
+inputAudioFile = 'music_pressure-cooker_hp.wav';
 
 % Step 1: Load input audio file
 [x, fs] = loadAudioFile(inputAudioFile);
@@ -11,6 +11,6 @@ x = checkAudioFile(x);
 
 % Step 3: Classify the noise
 noiseType = classifyNoise(x);
-
+ 
 fprintf('\n');
 disp(['The detected noise type is: ', noiseType]);

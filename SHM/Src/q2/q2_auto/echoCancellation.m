@@ -35,10 +35,11 @@ function y = echoCancellation(echoSignal, sampling_freq)
     y = filter(b,a,echoSignal);
 
     disp("Original Signal");
-    sound(echoSignal, sampling_freq); pause(length(echoSignal)/sampling_freq + sampling_freq);
-
+    sound(echoSignal, sampling_freq); 
+    pause(length(echoSignal)/sampling_freq);
+    pause(2);
     disp("Sound without echo");
-    sound(y,sampling_freq);
+    sound(y, sampling_freq);
 
     % OPTIONAL: Plot the original signal and signal without echo
     figure;
